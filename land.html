@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <title>VITCMUN '18</title>
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'gpg1ltj',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+  <link rel="stylesheet" href="https://cd
+njs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      p {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  color:white;
+  font-weight: 100 !important;
+  line-height: 20px;
+  font-stretch: 200em !important;
+  $thick : 3px;
+$pad : 0.7em;
+$extra : calc(#{$pad} * 1.2);
+$color : #f26522;
+
+body {
+  background: #2d2d2d;
+}
+
+}
+
+a {
+  position: fixed;
+  cursor: pointer;
+  top: 50vh;
+  left: 50%;
+  color: white;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+}
+a .text {
+  font-family: ;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+a:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #f26522;
+  z-index: -1;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.line {
+  position: absolute;
+  background: #f26522;
+}
+.line.-right, .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+.line.-top, .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+.line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+.line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+.line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+.line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+a:hover .text,
+a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+a:hover:after,
+a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+a:hover .line,
+a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+a:hover .line.-right,
+a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+a:hover .line.-top,
+a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+a:hover .line.-left,
+a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+a:hover .line.-bottom,
+a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+  
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body class="w3-black w3-center w3-display-container">
+
+<div class="w3-container" style="margin-top:200px;">
+  <div class="w3-card">
+      <img src="images/logovit.png" style="height:300px; width:300px" class="w3-images">
+      <div class="w3-container w3-center">
+          <p style="font-size:36px">Coming up soon.</p>
+        <a href="http://www.vitcmun.in" style="text-decoration:none !important; top:70px !important; left:90px !important">
+
+  <span class="text" style="font-family:CenturyGothic !important; text-decoration:none !important">Go back</span>
+  <span class="line -right"></span>
+  <span class="line -top"></span>
+  <span class="line -left"></span>
+  <span class="line -bottom"></span>
+</a>
+        </div>
+  </div>
+</div>
+</body>
+</html>

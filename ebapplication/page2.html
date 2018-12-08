@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="frontend.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VITCMUN: Executive Board Applications</title>
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-labels-on-top.css">
+</head>
+<body bgcolor="#1c1c1c">
+	<header>
+		<h1>VITCMUN: Executive Board Applications</h1>
+    </header>
+	<br><Br>
+    <div class="main-content">
+        <form class="form-labels-on-top" method="POST" action="request.php" >
+            <div class="form-title-row">
+                <h1>Tell us more about you</h1>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Delegate Experience</span>
+                    <textarea name="Delegate-experience" cols="40" rows="5" id="Delegateexperiance"required></textarea>
+                </label>
+            </div>
+			<div class="form-row">
+                <label>
+                    <span>Executive Board Experience</span>
+                    <textarea name="eb-experience" cols="40" rows="5" id="ebexperiance" required></textarea>
+                </label>
+            </div>
+            <div class="form-row">
+                <button name="form2" type="2sub" style="display: block; margin: 0 auto;" >Proceed</button>
+            </div>
+						<label id="val"><font color="#ffffff">X</font></label>
+
+					<input type="hidden" value="" name="str" id="str">
+					<input type="hidden" value="" name="vid" id="vid">
+				</form>
+    </div>
+	<br><br>
+	<footer>
+		<h1><b>Debate.     Delegate.     Decimate.</b></h1>
+    </footer>
+</body>
+</html>

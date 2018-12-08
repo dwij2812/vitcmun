@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<title>VITCMUN 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<style>
+  p {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100 !important;
+  line-height: 20px;
+  font-stretch: 200em !important;
+}
+</style>
+<script>
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+<body class="w3-black">
+<div class="w3-hide-small">
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-black w3-container w3-center" style="height:100vh">
+    <div>
+      <img src="images2/logovit.png" class="w3-image" style="height:300px; width:300px" alt="VITCMUN18">
+    </div>
+    <div>
+      <p><a href="http://www.vitcmun.in" class="w3-button w3-black w3-xlarge w3-block w3-hover-blue-grey w3-padding-16">Home</a></p>
+      <p><a href="http://www.vitcmun.in/allotments/Allotment.php" class="w3-button w3-black w3-xlarge w3-block w3-hover-dark-grey w3-padding-16">Allotments</a></p>
+      <p><a href="https://www.townscript.com/e/vitcmun-2018-221022/booking" class="w3-button w3-black w3-xlarge w3-block w3-hover-brown w3-padding-16">Payment</a></p>
+    </div>
+    <br><br><br><br>
+    <a href="#sponsors" class="fa fa-arrow-down" style="text-decoration: none"></a>
+  </div>
+  <div id="sponsors" style="margin-bottom:10px"></div>
+  <div><p style="font-size:34px;color:white;height:10vh;" class="w3-center">Title Sponsor</p></div>
+  <div class="w3-half w3-display-container w3-center" style="height:70vh">
+      <a href="http://www.balmerol.com/"><img src="images2/balmerol2.jpg" alt="yesbank" class="w3-image" style="height:200px; width:400px"></a></div>
+      <div class="w3-half w3-display-container w3-center" style="height:70vh">
+      <p style="font-size:22px; line-height: 30px;color:white; ">Balmerol is the most trusted and experienced brand in the domain of industrial and automotive lubricants. Manufactured by Balmer Lawrie and Co. Ltd. at its modern manufacturing plants, strategically spread across India (Kolkata, Chennai and Silvassa) using PLC controlled processing, pressure saponification systems for greases and micro-filtration systems for oils, Balmerol is The Best in Long Run. Balmerol is synonymous with superior technology, high quality and efficient performance.</p>
+    </div>
+
+
+
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-white w3-display-container w3-center"  style="height:100vh" id="work">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">BANKING PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px">Education Partner</p>
+      <a href="https://www.time4education.com/"><img src="images2/time.png" alt="yesbank" class="w3-image" style="height:120px; width:500"></a>
+      <p style="font-size:22px;line-height:30px">Triumphant Institute of Management Education Pvt. Ltd. (T.I.M.E.) is India's leading test-prep institute with a pan-India presence and is headquartered in Hyderabad. Established in 1992, T.I.M.E. today operates out of 248 offices located in 117 towns and cities across the country. Over 40 IIT/IIM graduates form part of the core team at T.I.M.E.
+</p>
+    </div>
+  </div>
+
+  <div class="w3-half w3-black w3-center w3-display-container"  style="height:100vh">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">TRANSPORTATION PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px;line-height:30px !important">Refreshment Partner</p>
+      <a href="https://www.mcdonaldsindia.com/"><img src="images2/mcD.png" alt="yesbank" class="w3-image" style="height:200px; width:250px"></a>
+      <p style="font-size:22px;line-height:30px">Back in 1954, a man named Ray Kroc discovered a small burger restaurant in California, and wrote the first page of our history. From humble beginnings as a small restaurant, they have become one of the world's leading food service brands with more than 36,000 restaurants in more than 100 countries.</p>
+    </div>
+    <div style="bottom:100px">
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-display-container w3-center"  style="height:100vh" id="work">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">BANKING PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px;line-height:30px !important">Outdoor Location Partner</p>
+      <a href="http://www.zacsvalley.com/" style="text-decoration:none"><img src="images2/zac.jpg" alt="yesbank" class="w3-image" style="height:250px; width:500px"></a>
+      <p style="font-size:22px;line-height:30px !important">Welcome to the unexplored nature at Zac's Valley Resorts. An Eco friendly hill resort situated next to a national forest in Kodaikanal, South of India. Zac's Valley Resorts is not just a usual resort to stay or hangout, it is a place to feel and be in Nature. It’s a home for Nature lovers.
+</p>
+    </div>
+  </div>
+
+  <div class="w3-half w3-white w3-center w3-display-container"  style="height:100vh">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">TRANSPORTATION PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px">Media Partner</p>
+      <a href="http://www.thehindu.com/"><img src="images2/hindu.jpg" alt="yesbank" class="w3-image" style="height:120px; width:600px"></a>
+      <p style="font-size:22px;line-height:30px">The Hindu, started in 1878 as a weekly, became a daily in 1889 and from then on has been steadily growing to the circulation of 15,58,379 copies and a readership of about 22.58 lakhs.
+The Hindu's independent editorial stand and its reliable and balanced presentation of the news have over the years, won for it the serious attention and regard of the people who matter in India and abroad.
+</p>
+    </div>
+    <div style="bottom:100px">
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-white w3-display-container w3-center" style="height:100vh" id="work">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">BANKING PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px">Goodwill Partner</p>
+      <a href="http://www.lonepack.org/" style="text-decoration:none"><img src="images2/lonepack.png" class="w3-image" style="height:150px; width:150px"></a>
+      <p style="font-size:28px">Lonepack</p>
+      <p style="font-size:22px;line-height:30px">A non-profit aimed at combating the sufferings emanating from mental health concerns, that have lasted for ages. LonePack has worked for the cause using a community driven approach, surrounding their motto, “Shatter the Stigma”. They did this by working on passionate campaigns. This year, it is returning to positively affect a larger scale of lives, and hopefully carry on the good fight.</p>
+      
+    </div>
+  </div>
+
+  <div class="w3-half w3-black w3-center w3-display-container"  style="height:100vh">
+    <!--<div style="margin-top:150px">
+      <p style="font-size:40px; line-height:120%">TRANSPORTATION PARTNERS</p>
+    </div>-->
+    <div class="w3-display-middle">
+    	<p style="font-size:34px">Welfare Partner</p>
+      <a href="https://www.cry.org/"><img src="images2/cry.jpg" alt="yesbank" class="w3-image" style="height:300px; width:300px"></a>
+      <p style="font-size:22px;line-height:30px">Child Rights and You is an Indian non-profit that believes in every child’s right to a childhood – to live, learn, grow and play. For nearly 4 decades, CRY and its 200 partner NGOs have worked with parents and communities across 23 states to ensure sustainable change in the lives of over 2 million underprivileged children.</p>
+    </div>
+    <div style="bottom:100px">
+
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="w3-hide-large w3-hide-medium">
+  <div class="w3-black w3-container w3-center" style="height:700px">
+    <div>
+      <img src="images2/logovit.png" class="w3-image" style="height:300px; width:300px" alt="VITCMUN18">
+    </div>
+    <div>
+      <p><a href="http://www.vitcmun.in" class="w3-button w3-black w3-xlarge w3-block w3-hover-blue-grey w3-padding-16">Home</a></p>
+      <p><a href="http://www.vitcmun.in/allotments/Allotment.php" class="w3-button w3-black w3-xlarge w3-block w3-hover-dark-grey w3-padding-16">Allotments</a></p>
+      <p><a href="https://www.townscript.com/e/vitcmun-2018-221022/booking" class="w3-button w3-black w3-xlarge w3-block w3-hover-brown w3-padding-16">Payment</a></p>
+    </div>
+  </div>
+  
+<div class="w3-row">
+  <div class="w3-black w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+        <p style="font-size:24px">Title Sponsor</p>
+        <br><br>
+      <a href="http://www.balmerol.com/"><img src="images2/balmerol2.jpg" alt="yesbank" class="w3-image" style="height:150px; width:750px"></a>
+
+      
+      
+    </div>
+  </div>
+  
+  <div style="bottom:100px">
+
+  </div>
+</div>
+
+<div class="w3-row">
+  <div class="w3-white w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Refreshment Partner</p>
+    	<br><br>
+      <a href="https://www.mcdonaldsindia.com/"><img src="images2/mcD.png" alt="McD" class="w3-image" style="height:150px; width:300px"></a>
+    </div>
+  </div>
+
+
+
+
+  <div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+
+<div class="w3-row">
+  <div class="w3-black w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Outdoor Location Partner</p>
+    	<br><br>
+      <a href="http://www.zacsvalley.com/" style="text-decoration:none"><img src="images2/zac.jpg" alt="yesbank" class="w3-image" style="height:180px; width:400px"></a>
+    </div>
+  </div>
+
+
+
+
+  <div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+
+<div class="w3-row">
+  <div class="w3-white w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Media Partner</p>
+    	<br><br>
+      <a href="http://www.thehindu.com/"><img src="images2/hindu.jpg" alt="yesbank" class="w3-image" style="height:100px; width:600px"></a>
+    </div>
+  </div>
+<div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+
+  <div class="w3-row">
+  <div class="w3-black w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Welfare Partner</p>
+    	<br><br>
+            <a href="https://www.cry.org/"><img src="images2/cry.jpg" alt="yesbank" class="w3-image" style="height:200px; width:200px"></a>
+    </div>
+  </div>
+<div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+
+
+  <div class="w3-row">
+  <div class="w3-white w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Goodwill Partner</p>
+    	<br><br>
+      <a href="http://www.lonepack.org/" style="text-decoration:none"><img src="images2/lonepack.png" class="w3-image" style="height:150px; width:150px"></a>
+      <p style="font-size:31px">Lonepack</p>
+    </div>
+  </div>
+  <div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+
+<div class="w3-row">
+  <div class="w3-black w3-center w3-display-container" style="height:100vh">
+    <div class="w3-display-middle">
+    	<p style="font-size:24px">Education Partner</p>
+    	<br><br>
+      <a href="https://www.time4education.com/" style="text-decoration:none"><img src="images2/time.png" class="w3-image" style="height:70px; width:150px"></a>
+
+    </div>
+  </div>
+  <div style="bottom:100px">
+
+  </div>
+  </div>
+
+
+
+
+</div>
+  <div style="bottom:100px">
+
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16 w3-round w3-center" style="color:white">
+<hr>
+  <button class="w3-btn w3-white w3-hover-white w3-border w3-border-black w3-round-xlarge w3-padding-16"><a href="http://www.vitcmun.in/" style="text-decoration:none">RETURN TO HOME</a></button>
+</footer>
+
+</body>
+</html>

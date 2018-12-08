@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VITCMUN: Executive Board Applications</title>
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-labels-on-top.css">
+	<link rel="stylesheet" href="assets/scrollbar.css">
+
+</head>
+<body bgcolor="#1c1c1c">
+
+	<header>
+		<h1>VITCMUN: Executive Board Applications</h1>
+    </header>
+	<br><Br>
+    <div class="main-content">
+        <form class="form-labels-on-top" method="POST" action="request.php">
+
+            <div class="form-title-row">
+                <h1>Basic Details</h1>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Full Name</span>
+                    <input type="text" name="name" required>
+                </label>
+            </div>
+						<div class='form-row'>
+                <label>
+                    <span>City</span>
+                    <!--input type='text' name='city' required-->
+					<input type='text' name='city' id='autocomplete' required />
+					<script>
+					  var input = document.getElementById('autocomplete');
+					  var autocomplete = new google.maps.places.Autocomplete(input,{types: ['(cities)']});
+					  google.maps.event.addListener(autocomplete, 'place_changed', function(){
+						 var place = autocomplete.getPlace();
+					  })
+					</script>
+                </label>
+            </div>
+			<div class="form-row">
+                <label>
+                    <span>Date of Birth</span>
+                    <input type="date" min="1960-01-01"  max="2010-01-01" name="DOB" required>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" required>
+                </label>
+            </div>
+			<div class="form-row">
+                <label>
+                    <span>Mobile Number</span>
+                    <input type="text" name="mobileno" pattern="[789][0-9]{9}"  required>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <button name="form1" type="1sub" style="display: block; margin: 0 auto;" >Proceed</button>
+            </div>
+        </form>
+    </div>
+	<br><br>
+	<footer>
+		<h1>Debate.     Delegate.     Decimate.</h1>
+    </footer>
+</body>
+</html>

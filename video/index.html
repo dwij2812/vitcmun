@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>VITCMUN 2018</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: rgb(10,10,10);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.  {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0 0 2em;
+}
+@media (min-width: 450px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1 {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5.25em;
+    margin: 0 0 1em;
+  }
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+  p {
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 90%;
+  }
+}
+@media (max-height: 500px) {
+  p {
+    left: 0;
+    position: relative;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+p a {
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid;
+  color: #fff;
+  line-height: 1.4;
+  padding: .25em;
+  text-decoration: none;
+}
+p a:hover {
+  background: white;
+  color: #E1332D;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-1 {
+  background: rgba(10,10,10,0);
+  font-weight: 100;
+}
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+      </style>
+  
+</head>
+
+<body>
+
+  <section class="buttons">
+  <img src="logovit.png" style="height:15%;width:15%; margin-left: 45%">
+  <div class="container">	
+    <video controls style="width:64%;height:48%">
+  			<source src="movie.mp4" type="video/mp4">
+  			Your browser does not support the video tag.
+		</video>
+    <a href="http://www.vitcmun.in/DelegateApplication" class="btn btn-1">
+      <svg>
+        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+      </svg>
+     Apply Now
+    </a>
+  </div>
+  
+</section>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+</body>
+
+</html>

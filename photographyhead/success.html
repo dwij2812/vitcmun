@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VITCMUN: Executive Board Applications</title>
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-labels-on-top.css">
+	<style>
+	a {
+  position: fixed;
+  cursor: pointer;
+  top: 50vh;
+  left: 50%;
+  color: white;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+}
+a .text {
+  font-family: ;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+a:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #f26522;
+  z-index: -1;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.line {
+  position: absolute;
+  background: #f26522;
+}
+.line.-right, .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+.line.-top, .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+.line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+.line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+.line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+.line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+a:hover .text,
+a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+a:hover:after,
+a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+a:hover .line,
+a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+a:hover .line.-right,
+a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+a:hover .line.-top,
+a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+a:hover .line.-left,
+a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+a:hover .line.-bottom,
+a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+  
+}
+body {
+  background: #1c1c1c;
+}
+</style>
+
+</head>
+<body>
+
+	<header>
+		<h1>VITCMUN: Head of Photography Applications</h1>
+    </header>
+	
+    <div class="main-content" style="margin-top: 150px; margin-bottom: 200px">
+	
+        <form class="form-labels-on-top" method="post" action="success.html">
+
+            <div class="form-title-row">
+                <h1>Thank You!</h1><br>
+            </div>
+			<div class="form-row">
+                <label>
+				<center>
+                    <h4>Your Application has been received. Hope to see you there.</h4>
+				</center>
+				</label>
+            </div>
+            
+        </form>
+
+		<a href="http://www.vitcmun.in" style="text-decoration:none !important; top:70px !important; left:120px !important;margin-left:42%">
+
+  <span class="text w3-center " style="font-family:CenturyGothic !important; text-decoration:none !important;">Go back</span>
+  <span class="line -right"></span>
+  <span class="line -top"></span>
+  <span class="line -left"></span>
+  <span class="line -bottom"></span>
+</a>
+	</div>
+	<footer>
+		<h1>Debate.     Delegate.     Decimate.</h1>
+    </footer>
+</body>
+</html>
