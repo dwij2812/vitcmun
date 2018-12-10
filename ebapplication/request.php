@@ -32,10 +32,10 @@ if(isset($_POST['form1'])){
   dict={'ud':'DISEC','uh':'HRC','sc':'UNSC','aipp':'AIPPM','tc':'TRILATERAL COMMISSION','ar':'ARAB LEAGUE'};
   post=['Chair','Vice Chair','Director'];
   dict1={'c':'CHAIR','vc':'VICE CHAIR','d':'DIRECTOR'};
-  
+
   for(i=0;i<council.length;i++){
      res = textin.match(council[i]);
-     
+
      if(res && res.length>count){
        count=res.length;
        str=council[i];
@@ -113,9 +113,9 @@ if(isset($_POST['final_button'])){
 	$accomodation = $_SESSION['accomodation'];
 
     $server = "mysql.hostinger.in";
-    $username = "u219096124_admin";
-    $password = "AlphaBeta1!";
-    $dbname = "u219096124_sur";
+    $username = "u720206343_tech";
+    $password = "tech123";
+    $dbname = "u720206343_vitcc";
 
    // echo "<script>alert("Hello")</script>";
 
@@ -137,6 +137,7 @@ if(isset($_POST['final_button'])){
         header("Location:success.html");
        }
 else{
+echo("<script>alert('It Failed');</script>");
 header("Location:failure.html");
 }
 }
@@ -156,4 +157,3 @@ header("Location:failure.html");
 
 </body>
 </html>
-	
