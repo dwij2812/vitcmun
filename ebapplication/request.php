@@ -11,25 +11,28 @@ if(isset($_POST['form1'])){
 	$_SESSION['city'] = $_POST["city"];
 	$_SESSION['mobile'] = $_POST["mobileno"];
 	$_SESSION['email'] = $_POST["email"];
+	$_SESSION['college'] = $_POST["college"];
 	//echo "<script>alert('adasd');</script>";
 	header("Location:page2.html");
-//echo "asas";
+
 }
 
  if(isset($_POST['form2'])){
+	$db = $_SESSION['db'];
  	$_SESSION['db'] = $_POST["Delegate-experience"];
- 	$db = $_SESSION['db'];
+ 	//$_SESSION['dbn']=$_POST["Del-experience-no"];
  	$_SESSION['eb'] = $_POST["eb-experience"];
+	//$_SESSION['ebn']=$_POST["eb-experience-no"];
   	$_SESSION['str'] = $_POST['str'];
   	$_SESSION['vid'] = $_POST['vid'];
   	echo "<script>
   	function sendData(){
   count=0;
   str='';
-  vid='';
+  vid='UNGA DISEC';
   textin = 'echo $db'.toUpperCase();
-  council=['UNGA DISEC','UN HRC','SECURITY COUNCIL','ALL INDIA POLITICAL PARTY MEET','TRILATERAL COMMISSION','ARAB LEAGUE'];
-  dict={'ud':'DISEC','uh':'HRC','sc':'UNSC','aipp':'AIPPM','tc':'TRILATERAL COMMISSION','ar':'ARAB LEAGUE'};
+  council=['UNGA DISEC','EC','SECURITY COUNCIL','ALL INDIA POLITICAL PARTY MEET','UNSCW','WHSR'];
+  dict={'ud':'DISEC','ec':'EC','sc':'UNSC','aipp':'AIPPM','uncsw':'UNCSW','whsr':'WHSR'};
   post=['Chair','Vice Chair','Director'];
   dict1={'c':'CHAIR','vc':'VICE CHAIR','d':'DIRECTOR'};
 
@@ -85,6 +88,7 @@ if(isset($_POST['form41'])){
 
 if(isset($_POST['final_button'])){
  	$_SESSION['accomodation'] = $_POST["checkbox"];
+	$_SESSION['poscons'] = $_POST["consent"];
 
 //echo "jww";
 	$name = addslashes($_SESSION['name']);
@@ -92,6 +96,7 @@ if(isset($_POST['final_button'])){
  	$city = addslashes($_SESSION['city']);
  	$mobile = $_SESSION['mobile'];
  	$email = addslashes($_SESSION['email']);
+	$college= $_SESSION['college'];
 
 	$db = addslashes($_SESSION['db']);
  	$eb = addslashes($_SESSION['eb']);
@@ -111,11 +116,12 @@ if(isset($_POST['final_button'])){
 	$q2 = addslashes($_SESSION['que2']);
 
 	$accomodation = $_SESSION['accomodation'];
+	$consent = $_SESSION['poscons'];
 
-    $server = "mysql.hostinger.in";
-    $username = "u720206343_tech";
-    $password = "tech123";
-    $dbname = "u720206343_vitcc";
+	$server = "mysql.hostinger.in";
+	$username = "u720206343_tech";
+	$password = "tech123";
+	$dbname = "u720206343_vitcc";
 
    // echo "<script>alert("Hello")</script>";
 
@@ -126,7 +132,7 @@ if(isset($_POST['final_button'])){
    	    echo("asdsa");
    	}
 
-   	$sql = "INSERT INTO eb VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$db."','".$eb."','".$c1."','".$p1."','".$a11."','".$a12."','".$c2."','".$p2."','".$a21."','".$a22."','".$q1."','".$q2."','".$accomodation."')";
+   	$sql = "INSERT INTO eb VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$college."','".$db."','".$eb."','".$c1."','".$p1."','".$a11."','".$a12."','".$c2."','".$p2."','".$a21."','".$a22."','".$q1."','".$q2."','".$accomodation."','".$consent."')";
 
     //echo "<script>alert('dsad');</script>";
 

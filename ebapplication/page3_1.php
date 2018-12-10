@@ -14,7 +14,8 @@ $str = $_GET["str"];
     function load(){
         //alert('asda');
         var str = "<?php echo $str ?>";
-        //var vid = "<?php echo $vid ?>";
+        var vid = "<?php echo $vid ?>";
+        <?php echo $vid ?>
         //alert(str);
         //alert(vid);
         if(str!='')
@@ -30,11 +31,12 @@ $str = $_GET["str"];
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	
+
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000" />
 	<title>VITCMUN: Executive Board Applications</title>
 	<link rel="stylesheet" href="assets/demo.css">
 	<link rel="stylesheet" href="assets/form-labels-on-top.css">
@@ -58,11 +60,11 @@ $str = $_GET["str"];
                     <span>Council Preference</span>
                     <select name="council-preference-1" id="cp" required>
                         <option id="ud">UNGA DISEC</option>
-                        <option id="uh">UN HRC</option>
+                        <option id="uh">EUROPEAN COUNCIL</option>
                         <option id="sc">SECURITY COUNCIL</option>
                         <option id="aipp">ALL INDIA POLITICAL PARTY MEET</option>
-						<option id="tc">TRILATERAL COMMISSION</option>
-						<option id="al">ARAB LEAGUE</option>
+						<option id="tc">UNCSW</option>
+						<option id="al">WHITE HOUSE SITUATION ROOM</option>
                     </select>
                 </label>
             </div>
