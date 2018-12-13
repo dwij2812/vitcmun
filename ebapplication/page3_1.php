@@ -85,12 +85,30 @@ $str = $_GET["str"];
                 </label>
             </div>
 
+            <div class="form-row">
+                      <label>
+                          <span>Reason for choosing Agenda 1:</span>
+                          <input type="text" name="reason11" required>
+                      </label>
+                  </div>
+
+
+
 			<div class="form-row">
                 <label>
                     <span>Suggested Agenda 2:</span>
                     <input type="text" name="sa12" required>
                 </label>
             </div>
+
+            <div class="form-row">
+                      <label>
+                          <span>Reason for choosing Agenda 2:</span>
+                          <input type="text" name="reason12" required>
+                      </label>
+                  </div>
+
+
 
 
 

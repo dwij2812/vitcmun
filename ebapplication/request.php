@@ -62,6 +62,8 @@ if(isset($_POST['form1'])){
  	$_SESSION['position1'] = $_POST["position-preference-1"];
  	$_SESSION['agenda11'] = $_POST["sa11"];
  	$_SESSION['agenda12'] = $_POST["sa12"];
+	$_SESSION['reason11'] = $_POST["reason11"];
+	$_SESSION['reason12'] = $_POST["reason12"];
  	header("Location:page3_2.html");
 
  }
@@ -71,6 +73,8 @@ if(isset($_POST['form32'])){
  	$_SESSION['position2'] = $_POST["position-preference-2"];
  	$_SESSION['agenda21'] = $_POST["sa21"];
  	$_SESSION['agenda22'] = $_POST["sa22"];
+	$_SESSION['reason21'] = $_POST["reason21"];
+	$_SESSION['reason22'] = $_POST["reason22"];
 	header("Location:page4_1.html");
  }
 
@@ -106,11 +110,16 @@ if(isset($_POST['final_button'])){
  	$p1 = $_SESSION['position1'];
  	$a11 = addslashes($_SESSION['agenda11']);
  	$a12 = addslashes($_SESSION['agenda12']);
+	$r11 = addslashes($_SESSION['reason11']);
+	$r12 = addslashes($_SESSION['reason12']);
 
  	$c2 = $_SESSION['council2'];
  	$p2 = $_SESSION['position2'];
  	$a21 = addslashes($_SESSION['agenda21']);
  	$a22 = addslashes($_SESSION['agenda22']);
+	$r21 = addslashes($_SESSION['reason21']);
+	$r22 = addslashes($_SESSION['reason22']);
+
 
 	$q1 = addslashes($_SESSION['que1']);
 	$q2 = addslashes($_SESSION['que2']);
@@ -132,7 +141,7 @@ if(isset($_POST['final_button'])){
    	    echo("asdsa");
    	}
 
-   	$sql = "INSERT INTO eb VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$college."','".$db."','".$eb."','".$c1."','".$p1."','".$a11."','".$a12."','".$c2."','".$p2."','".$a21."','".$a22."','".$q1."','".$q2."','".$accomodation."','".$consent."')";
+   	$sql = "INSERT INTO eb VALUES('".$name."','".$dob."','".$city."','".$mobile."','".$email."','".$college."','".$db."','".$eb."','".$c1."','".$p1."','".$a11."','".$r11."','".$a12."','".$r12."','".$c2."','".$p2."','".$a21."','".$r21."','".$a22."','".$r22."','".$q1."','".$q2."','".$accomodation."','".$consent."')";
 
     //echo "<script>alert('dsad');</script>";
 

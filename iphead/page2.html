@@ -17,22 +17,31 @@
 		<h1>VITCMUN: Head of International Press Applications</h1>
     </header>
 	<br><Br>
-    <div class="main-content">
-        <form class="form-labels-on-top" method="post" action="request.php">
-
+		<div class="main-content">
+        <form class="form-labels-on-top" method="POST" action="request.php" >
             <div class="form-title-row">
                 <h1>Tell us more about you</h1>
             </div>
             <div class="form-row">
                 <label>
-                    <span>Your Experience</span>
-                    <textarea name="Delegate-experience" cols="40" rows="12"  required></textarea>
+                    <span>MUN experience as a reporter</span>
+                    <textarea name="Delegate-experience" cols="40" rows="5" id="Delegateexperiance"required></textarea>
+                </label>
+            </div>
+			<div class="form-row">
+                <label>
+                    <span>MUN experience as an Executive Board member of the International Press. </span>
+                    <textarea name="eb-experience" cols="40" rows="5" id="ebexperiance" required></textarea>
                 </label>
             </div>
             <div class="form-row">
-                <button type="2sub" style="display: block; margin: 0 auto;"  name="info">Proceed</button>
+                <button name="form2" type="2sub" style="display: block; margin: 0 auto;" >Proceed</button>
             </div>
-        </form>
+						<label id="val"><font color="#ffffff">X</font></label>
+
+					<input type="hidden" value="" name="str" id="str">
+					<input type="hidden" value="" name="vid" id="vid">
+				</form>
     </div>
 	<br><br>
 	<footer>
