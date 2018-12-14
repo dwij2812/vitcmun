@@ -5,10 +5,10 @@ header("Location:page2.php");
 }
 
 //include 'session_home.php';
-
+//$max_ele=0;
 //$max_ele = $_GET['max_ele'];
-//$error=1;
-//$error = $_GET['error'];
+$error=0;
+
 if(!isset($_SESSION))
     {
         session_start();
@@ -395,11 +395,12 @@ setInterval("fn()",1);
   <footer>
 		<h3><center><font color="white">VITCMUN - Tech Team</font></center></h3>
     </footer>
-    <!--?php
+    <?php
+    $error = $_GET['error'];
     //echo("<script>window.alert('$error');</script>");
   if($error==1){
     echo("<script>window.alert('Any 2 entries can not be the same');</script>");
   }
-  ?-->
+  ?>
 </body>
 </html>

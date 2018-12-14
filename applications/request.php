@@ -46,7 +46,7 @@ if(isset($_POST['button_2']))
 
 	$max_ele = array_keys($array, max($array))[0];
 
-	header("Location:page3_1.php?max_ele=".$max_ele);
+	header('Location:page3_1.php?error=0');
 
 
 
@@ -121,7 +121,7 @@ $_SESSION['arab_phone'] ="Null";
 header("Location:page3_3.php");
 }
 if($comm<5){
-		header("Location:page3_2.php");
+		header("Location:page3_2.php?error=0");
 }
 	}
 }
@@ -192,6 +192,10 @@ if(isset($_POST['button_3_2']))
 	}
 	elseif(strcmp($v_p22,$v_p23)==0){
 		header("Location:page3_2.php?error=1");
+	}
+  elseif(strcmp($_SESSION["committee1"],$_SESSION["committee2"])==0){
+		echo($_SESSION["committee1"]);
+		header("Location:page3_2.php?error=2");
 	}
 	else{
 if($comm==5){
