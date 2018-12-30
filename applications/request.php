@@ -11,6 +11,7 @@ session_start();
 if(isset($_POST['button_1']))
 {
 	$_SESSION['name']=$_POST['name'];
+  $_SESSION['gender']=$_POST['gender'];
 	$_SESSION['city']=$_POST['city'];
 	$_SESSION['dob']=$_POST['DOB'];
   $_SESSION['college']=$_POST['college'];
@@ -223,6 +224,7 @@ header("Location:page4.php");
 
 //echo "jww";
 	$name = $_SESSION['name'];
+  $gender=$_SESSION['gender'];
  	$dob = $_SESSION['dob'];
   $college=$_SESSION['college'];
  	$city = $_SESSION['city'];
@@ -247,7 +249,7 @@ $a_phone = $_SESSION['arab_phone'];
 
 
 
-   	$sql = "INSERT INTO del VALUES('".addslashes($name)."','".addslashes($dob)."','".addslashes($city)."','".addslashes($college)."','".addslashes($mobile)."','".addslashes($email)."','".addslashes($db)."','".addslashes($eb)."','".addslashes($comm1)."','".addslashes($p11)."','".addslashes($p12)."','".addslashes($p13)."','".addslashes($comm2)."','".addslashes($p21)."','".addslashes($p22)."','".addslashes($p23)."','".addslashes($accomodation)."','".addslashes($a_name)."','".addslashes($a_email)."','".addslashes($a_phone)."')";
+   	$sql = "INSERT INTO del VALUES('".addslashes($name)."','".addslashes($gender)."','".addslashes($dob)."','".addslashes($city)."','".addslashes($college)."','".addslashes($mobile)."','".addslashes($email)."','".addslashes($db)."','".addslashes($eb)."','".addslashes($comm1)."','".addslashes($p11)."','".addslashes($p12)."','".addslashes($p13)."','".addslashes($comm2)."','".addslashes($p21)."','".addslashes($p22)."','".addslashes($p23)."','".addslashes($accomodation)."','".addslashes($a_name)."','".addslashes($a_email)."','".addslashes($a_phone)."')";
 
     //echo "<script>alert('dsad');</script>";
 

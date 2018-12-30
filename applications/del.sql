@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2018 at 10:43 AM
+-- Generation Time: Dec 24, 2018 at 11:59 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `del` (
   `Name` varchar(200) NOT NULL,
+  `Gender` varchar(10) NOT NULL,
   `DOB` date NOT NULL,
   `City` varchar(200) NOT NULL,
   `college` varchar(100) NOT NULL,

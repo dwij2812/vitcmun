@@ -15,17 +15,17 @@ header("Location:page3_2.php");
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VITCMUN:Delegate Applications</title>
+	<title>VITCMUN: Delegate Applications</title>
 	<link rel="stylesheet" href="assets/demo.css">
 	<link rel="stylesheet" href="assets/form-labels-on-top.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<meta name="theme-color" content="#000000" />
-	
+
 </head>
 <body bgcolor="#1c1c1c">
 
 	<header>
-		<h1>VITCMUN: Executive Board Applications</h1>
+		<h1>VITCMUN: Delegate Applications</h1>
     </header>
 	<br><Br>
     <div class="main-content animated fadeInRight">
@@ -49,7 +49,7 @@ header("Location:page3_2.php");
     </div>
 	<br><br>
 	<footer>
-		<h1>Debate.     Delegate.     Decimate.</h1>
+		<h3><center><font color="white">VITCMUN - Tech Team</font></center></h3>
     </footer>
 </body>
 </html>

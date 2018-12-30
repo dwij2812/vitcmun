@@ -35,7 +35,7 @@ $server = "localhost";
 	<script type="text/javascript" src="js/datalist.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <meta name="theme-color" content="#000000" />
-  
+
 </head>
 <body bgcolor="#1c1c1c" onload="fn()">
 
@@ -372,8 +372,8 @@ $server = "localhost";
         </form>
     </div>
 	<br><br>
-	<footer>
-		<h1>Debate.     Delegate.     Decimate.</h1>
+  <footer>
+		<h3><center><font color="white">VITCMUN - Tech Team</font></center></h3>
     </footer>
     <!--?php
     //echo("<script>window.alert('$error');</script>");

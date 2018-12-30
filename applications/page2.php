@@ -52,7 +52,7 @@ header("Location:index.html");
     </div>
 	<br><br>
 	<footer>
-		<h1>Debate.     Delegate.     Decimate.</h1>
+		<h3><center><font color="white">VITCMUN - Tech Team</font></center></h3>
     </footer>
 </body>
 </html>
