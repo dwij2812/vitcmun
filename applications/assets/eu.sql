@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2018 at 10:53 AM
+-- Generation Time: Dec 25, 2018 at 08:01 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -40,14 +40,14 @@ INSERT INTO `eu` (`country`) VALUES
 ('Boyko Borisov, Minister-President, Bulgaria'),
 ('Andrej Plenkovic, President, Croatia'),
 ('Nicos Anastasiades, President, Cyprus'),
-('Andrej Babi?, Chairman of the Govt., Czech Republic'),
-('Lars L?kke Rasmussen, Minister of State, Denmark'),
+('Andrej Babis, Chairman of the Govt., Czech Republic'),
+('Lars Lokke Rasmussen, Minister of State, Denmark'),
 ('Juri Ratas, Head Minister, Estonia'),
 ('Juha Sipila, Minister of State, Finland'),
 ('Emmanuel Macron, President, France'),
 ('Angela Merkel, Federal Chancellor, Germany'),
 ('Alexis Tsipras, President, Greece'),
-('Viktor Orb?n, Minister-President, Hungary'),
+('Viktor Orban, Minister-President, Hungary'),
 ('Leo Varadkar, Prime Minister, Ireland'),
 ('Giuseppe Conte, President, Italy'),
 ('Maris Kucinskis, Minister-President, Latvia '),
@@ -56,12 +56,12 @@ INSERT INTO `eu` (`country`) VALUES
 ('Joseph Muscat, Prime Minister, Malta'),
 ('Mark Rutte, Minister-President, Netherlands'),
 ('Mateusz Morawiecki, President, Poland'),
-('Ant?nio Costa, Prime Minister, Portugal'),
+('Antonio Costa, Prime Minister, Portugal'),
 ('Klaus Iohannis, President, Romania'),
 ('Peter Pellegrini, Chairman of the Govt., Slovakia'),
-('Marjan ?arec, President, Slovenia'),
-('Pedro S?nchez, President, Spain'),
-('Stefan L?fven, Minister of State, Sweden'),
+('Marjan Sarec, President, Slovenia'),
+('Pedro Sanchez, President, Spain'),
+('Stefan Lofven, Minister of State, Sweden'),
 ('Theresa May, Prime Minister, United Kingdom'),
 ('Organisation, Observer, European Central Bank');
 
