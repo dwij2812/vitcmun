@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.html">
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.html">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.html">
+<link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="ms-icon-144x144.html">
 
@@ -1545,4 +1545,15 @@ function showDivs2(n2) {
 </div>
 
 </body>
+<script>
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
 </html>
