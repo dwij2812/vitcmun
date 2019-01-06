@@ -50,79 +50,15 @@ session_destroy();
 </head>
 <body bgcolor="#1c1c1c">
 	<header>
-		<h1>VITCMUN: Agenda Voting Results</h1>
+		<h1>VITCMUN: Agenda Voting</h1>
     </header>
 	&nbsp;&nbsp;<br><br><br><br><br>
     <div class="main-content">
         <form class="form-labels-on-top">
-          <b><h1>Results</h1></b><br>
-            <div class="form-row"><center>
-              <h3><?php echo "The total number of entries are : ".$rows;?></h3>
-              <br>
-              <br>
-              <h3 class="mycss"><b>European Council</b></h3>
-              <br>
-              <?php
-              echo "$a1ec % people prefers Agenda 1<br>";
-              echo "$a2ec % people prefers Agenda 2<br>";
-              echo "$a3ec % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-              <h3 class="mycss"><b>United Nations Commission on the Status of Women</b></h3>
-              <br>
-              <?php
-              echo "$a1unscw % people prefers Agenda 1<br>";
-              echo "$a2unscw % people prefers Agenda 2<br>";
-              echo "$a3unscw % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-
-              <h3 class="mycss"><b>All India Political Parties Meet</b></h3>
-              <br>
-              <?php
-              echo "$a1aippm % people prefers Agenda 1<br>";
-              echo "$a2aippm % people prefers Agenda 2<br>";
-              echo "$a3aippm % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-
-              <h3 class="mycss"><b>Disarmament and International Security</b></h3>
-              <br>
-              <?php
-              echo "$a1disec % people prefers Agenda 1<br>";
-              echo "$a2disec % people prefers Agenda 2<br>";
-              echo "$a3disec % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-
-              <h3 class="mycss"><b>White House Situation Room</b></h3>
-              <br>
-              <?php
-              echo "$a1whsw % people prefers Agenda 1<br>";
-              echo "$a2whsw % people prefers Agenda 2<br>";
-              echo "$a3whsw % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-
-              <h3 class="mycss"><b>Security Council</b></h3>
-              <br>
-              <?php
-              echo "$a1sc % people prefers Agenda 1<br>";
-              echo "$a2sc % people prefers Agenda 2<br>";
-              echo "$a3sc % people prefers Agenda 3<br><br>";
-              ?>
-              <br><br>
-
-              <h3 class="mycss"><b>International Press</b></h3>
-              <br>
-              <?php
-              echo "$a1ip % people prefers Agenda 1<br>";
-              echo "$a2ip % people prefers Agenda 2<br>";
-              echo "$a3ip % people prefers Agenda 3<br>";
-              ?>
-              <br><br>
-
-            </center></div>
+          <b><h1>Thank you</h1></b><br>
+					<div class="form-row">
+							Your Response has been recorded, see you at VITCMUN'19.
+					</div>
         </form>
     </div>
 	<br><br>
