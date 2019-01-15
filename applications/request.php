@@ -270,7 +270,7 @@ $subject = 'Welcome to the VITCMUN Family';
 //echo $subject;
 //$message = "Dear $name, \r\nYour application has been recieved for the VITCMUN 18.\r\nThe allotments for this round will be released on 21st January.\r\nKeep checking our social media pages for updates. \r\n \r\nYours faithfully, \r\nSiddhant Mukerjee \r\nSecretary General, VITCMUN 18";
 //echo $message;
-$message = "Dear $name,\r\nWe have successfully received your delegate application for VITCMUN 2019; to be held on 29th, 30th and 31st March.The allotments for this round will release on 3rd March 2018. The Organising Committee assures you of a forthcoming memorable MUN experience.\r\n\r\nFor any query call us by going to the contact section in http://www.vitcmun.in or mail us at contact@vitcmun.in.\r\n\r\nYours faithfully,\r\nRohit Joshi\r\nSecretary General, VITCMUN 19";
+$message = "Dear $name,\r\nWe have successfully received your delegate application for VITCMUN 2019; to be held on 29th, 30th and 31st March. The Organising Committee assures you of a forthcoming memorable MUN experience.\r\n\r\nFor any query call us by going to the contact section in http://www.vitcmun.in or mail us at contact@vitcmun.in.\r\n\r\nYours faithfully,\r\nRohit Joshi\r\nSecretary General, VITCMUN 19";
 
 
 $headers = 'From: Secretary General <contact@vitcmun.in>' . PHP_EOL .
