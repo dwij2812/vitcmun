@@ -140,7 +140,7 @@ $name = addslashes($name);
 
         else{
 
-echo "<script>document.getElementById('asd').innerHTML = 'Sorry, we could not find your allotment in our database, please check the filled details, or drop us a mail at <a href="mailto:contact@vitcmun.in">contact@vitcmun.in</a>';</script>";
+echo "<script>document.getElementById('asd').innerHTML = 'Sorry, we could not find your allotment in our database, please check the filled details, or drop us a mail at <a href="mailto:delaffairs@vitcmun.in">delaffairs@vitcmun.in</a>';</script>";
 
 }
 }
