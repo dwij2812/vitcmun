@@ -132,10 +132,9 @@ $name = addslashes($name);
                 {
                     if($row=mysqli_fetch_row($result))
                     {
-                        $c1 = $row[3];
-                        $c2 = $row[4];
-                        $c3 = $row[0];
-    echo "<script>document.getElementById('asd').innerHTML = 'Your allotment is $c1 in $c2 <br> Please use allotment code <b>$c3</b> for payments.';window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);</script>";
+                        $c1 = $row[2];
+                        $c2 = $row[3];
+    echo "<script>document.getElementById('asd').innerHTML = 'Your allotment is $c1 in $c2';window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);</script>";
                     }
 
         else{

@@ -4,15 +4,39 @@ require_once('config.php');
 ?>
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css.map">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-	<link rel="stylesheet" href="./CSS/demo.css">
-	<link rel="stylesheet" href="./CSS/form-labels-on-top.css">
-	<link rel="stylesheet" href="./CSS/scrollbar.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.js">
+
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VITCMUN: IP Applications</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css.map">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+        	<link rel="stylesheet" href="./CSS/demo.css">
+        	<link rel="stylesheet" href="./CSS/form-labels-on-top.css">
+        	<link rel="stylesheet" href="./CSS/scrollbar.css">
+            <meta name="theme-color" content="#000000" />
+        	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.js">
+            <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+            <script>
+                var OneSignal = window.OneSignal || [];
+                OneSignal.push(function() {
+                    OneSignal.init({
+                        appId: "ffa75f22-eac9-49c0-a089-4e20d7e9e120",
+                    });
+                });
+            </script>
+        	<!-- Global site tag (gtag.js) - Google Analytics -->
+        	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132819915-1"></script>
+        	<script>
+        	  window.dataLayer = window.dataLayer || [];
+        	  function gtag(){dataLayer.push(arguments);}
+        	  gtag('js', new Date());
+
+        	  gtag('config', 'UA-132819915-1');
+        	</script>
 		<style>
 			.end{
 				  font-family: 'Montserrat', sans-serif;
@@ -20,19 +44,19 @@ require_once('config.php');
 				  font-size:30px;
 				}
 
-			input[type=number]::-webkit-inner-spin-button, 
-			input[type=number]::-webkit-outer-spin-button { 
+			input[type=number]::-webkit-inner-spin-button,
+			input[type=number]::-webkit-outer-spin-button {
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-				margin: 0; 
+				margin: 0;
 			}
 		</style>
         <title>Registration form </title>
     </head>
     <body style="background-color: #000000">
 	    <header>
-		   <h1 align="center">VITCMUN'19</h1>
+		   <h1 align="center">VITCMUN'19: International Press Applications</h1>
         </header>
     <div align="center">
 		<img src="./images/logo.jpg" alt="VITCMUN'19" height="12%" width="12%">
@@ -55,8 +79,9 @@ require_once('config.php');
 			<div align="left">
 				<h4><b>Institution</b></h4><input class="input" type="text" name="del_inst" placeholder="Institution" required>
 			</div>&nbsp;
-			<div align="left">
-				<h4><b>MUN Experience</b></h4><input class="input" type="number" name="del_exp" min="0" max="200" placeholder="Your MUN Experience" required>
+            <div align="left">
+				<h4><b>MUN EXPERIENCE</b></h4>&nbsp;
+				<textarea class="textarea has-fixed-size" name="del_exp" rows="10" maxlength="175" required></textarea>
 			</div>&nbsp;
 			<div align="left">
 				<h4><b>Council Preference 1</b></h4>
@@ -129,7 +154,7 @@ require_once('config.php');
 		</div>
 		<div align="center">
 			<p>
-			<h4 class="end">Begin the change.</h4>
+			<h4 class="end">Debate. Delegate. Decimate. </h4>
 		</p><br><br>
 		</div>
 	<script>

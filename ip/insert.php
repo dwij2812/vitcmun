@@ -14,16 +14,16 @@
                 return $input_data;
             }
             $name=test_input($_POST['del_name']);
-            if (!preg_match("/^[a-zA-Z ]*$/",$name)) 
+            if (!preg_match("/^[a-zA-Z ]*$/",$name))
             {
-                $name_err = "Only letters and white space allowed in Name Field"; 
+                $name_err = "Only letters and white space allowed in Name Field";
                 header("Location:screening.php");
             }
             $email=test_input($_POST['del_email']);
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL))
             {
                 $email_err = "Invalid email format";
-                header("Location:screening.php"); 
+                header("Location:screening.php");
             }
             $phone=test_input($_POST['del_phone']);
             $date_of_birth=test_input($_POST['del_dob']);
@@ -50,7 +50,7 @@
                 echo '<script type="text/javascript">alert("Please choose some preferences")</script>';
                 exit();
             }
-            $query="select * from form_response where (name='$name' and email='$email') OR (email='$email') ";
+            $query="select * from ip where (name='$name' and email='$email') OR (email='$email') ";
             $query_run=mysqli_query($con,$query);
             if($query_run)
             {
@@ -63,7 +63,7 @@
                 }
                 else
                 {
-                    $insert_query="INSERT INTO `form_response`(`name`, `email`, `phone`, `date_of_birth`, `institute`, `experience`, `preference_1`, `preference_2`, `reason_agenda`, `reason_que_1`, `reason_que_2`, `accommodation`) VALUES ('$name','$email','$phone','$date_of_birth','$institute','$experience','$preference_1','$preference_2','$reason_agenda','$reason_que_1','$reason_que_2','$accommodation')";
+                    $insert_query="INSERT INTO ip VALUES ('$name','$date_of_birth','$phone','$email','$institute','$experience','$preference_1','$preference_2','$reason_agenda','$reason_que_1','$reason_que_2','$accommodation')";
                     $run_insert_query=mysqli_query($con,$insert_query);
                     if($run_insert_query)
                     {
