@@ -70,6 +70,12 @@ setInterval("fn()",1);
                 <h1>Council Preference 1</h1>
             </div>
             <div class="form-row">
+                <p style="color:#FF0000">The Countries that have been alloted in ROUND 1 will not be available in the drop-down list.
+                    <br>
+                    The drop down list currently shows the list of available countries/characters.
+                </p>
+            </div>
+            <div class="form-row">
                 <label>
                     <span>Council Preference</span>
                     <span>(Already selected according to your prior experience)</span>

@@ -22,11 +22,14 @@ if(isset($_POST['button_1']))
 }
 if(isset($_POST['button_2']))
 {
+    $_SESSION['dn']=$_POST['dmun'];
 	$_SESSION["dexp"]=$_POST["Delegate-experience"];
+    $_SESSION['en']=$_POST['enum'];
 	$_SESSION["ebexp"]=$_POST["eb-experience"];
 	//header("Location:page3_1.php");
 	$delexp = $_SESSION["dexp"];
 	$ebexp = $_SESSION["ebexp"];
+
 
 	$dis = substr_count(strtoupper($delexp),"DISEC")+substr_count(strtoupper($delexp),"UNGA DISEC")+substr_count(strtoupper($delexp),"ODC")+substr_count(strtoupper($delexp),"OFFICE FOR DRUG CONTROL")+substr_count(strtoupper($delexp),"UNGA ESS")+substr_count(strtoupper($delexp),"EMERGENCY SPECIAL SESSION");
 
@@ -237,6 +240,9 @@ header("Location:page4.php");
  	$email = $_SESSION['email'];
  	$db = $_SESSION["dexp"];
 	$eb = $_SESSION["ebexp"];
+    $dmun = $_SESSION['dn'];
+    $emun = $_SESSION['en'];
+
 
 	$comm1 = $_SESSION['committee1'];
 	$p11 = $_SESSION['p11'];
@@ -254,7 +260,7 @@ $a_phone = $_SESSION['arab_phone'];
 
 
 
-   	$sql = "INSERT INTO del VALUES('".addslashes($name)."','".addslashes($gender)."','".addslashes($dob)."','".addslashes($city)."','".addslashes($college)."','".addslashes($mobile)."','".addslashes($email)."','".addslashes($db)."','".addslashes($eb)."','".addslashes($comm1)."','".addslashes($p11)."','".addslashes($p12)."','".addslashes($p13)."','".addslashes($comm2)."','".addslashes($p21)."','".addslashes($p22)."','".addslashes($p23)."','".addslashes($accomodation)."','".addslashes($food)."','".addslashes($a_name)."','".addslashes($a_email)."','".addslashes($a_phone)."')";
+   	$sql = "INSERT INTO del VALUES('".addslashes($name)."','".addslashes($gender)."','".addslashes($dob)."','".addslashes($city)."','".addslashes($college)."','".addslashes($mobile)."','".addslashes($email)."','".addslashes($dmun)."','".addslashes($db)."','".addslashes($emun)."','".addslashes($eb)."','".addslashes($comm1)."','".addslashes($p11)."','".addslashes($p12)."','".addslashes($p13)."','".addslashes($comm2)."','".addslashes($p21)."','".addslashes($p22)."','".addslashes($p23)."','".addslashes($accomodation)."','".addslashes($food)."','".addslashes($a_name)."','".addslashes($a_email)."','".addslashes($a_phone)."')";
 
     //echo "<script>alert('dsad');</script>";
 

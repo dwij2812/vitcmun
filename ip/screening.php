@@ -83,9 +83,6 @@ require_once('config.php');
 				<h4><b>MUN EXPERIENCE</b></h4>&nbsp;
 				<textarea class="textarea has-fixed-size" name="del_exp" rows="10" maxlength="175" required></textarea>
 			</div>&nbsp;
-            <div align="center">
-                <h4 style="color:#FF0000">Please Select Distinct Council Preferences to avoid Redirection and loss of form data</h4><br>
-            </div>
 			<div align="left">
 				<h4><b>Council Preference 1</b></h4>
 				<select id="pref1select" name="del_cp1" class="preferenceSelect">
@@ -112,14 +109,15 @@ require_once('config.php');
 			</div>&nbsp;&nbsp;
 			<div align="left">
 				<h4><b>Write briefly on why Agenda for Pref. 1 is important to you. (150 Words)</b></h4>&nbsp;
-				<textarea class="textarea has-fixed-size" name="del_reason" rows="10" maxlength="175" required></textarea>
+				<textarea class="textarea has-fixed-size" name="del_reason" rows="10" maxlength="5000" required></textarea>
 			</div>&nbsp;
 			<div align="left">
-				<h4><b>"The Olympics represent diversity better than the United Nations."In not more than 500 words, write for or against the statement. Back up your thoughts with research. (maximum 1000 words)</b></h4>
-				<br><textarea class="textarea" name="del_reason_1" rows="10" maxlength="1000" required></textarea>
+				<h4><b>"The Olympics represent diversity better than the United Nations."<br>In not more than 500 words, write for or against the statement. Back up your thoughts with research.</b></h4>
+				<br><textarea class="textarea" name="del_reason_1" rows="10" maxlength="5000" required></textarea>
 			</div>&nbsp;
 			<div align="left">
-				<h4><b>	"You are holding the last leaf that exists in nature." Express your thoughts in any format.(maximum 1000 words) </b></h4>&nbsp;
+				<h4><b>	You are holding the last leaf that exists in nature.
+                    <br>Express your thoughts in any format. </b></h4>&nbsp;
 				<textarea class="textarea" name="del_reason_2" rows="10" maxlength="1000" required></textarea>
 			</div>&nbsp;
 		    <div align="left">
