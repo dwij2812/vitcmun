@@ -83,6 +83,9 @@ require_once('config.php');
 				<h4><b>MUN EXPERIENCE</b></h4>&nbsp;
 				<textarea class="textarea has-fixed-size" name="del_exp" rows="10" maxlength="175" required></textarea>
 			</div>&nbsp;
+            <div align="center">
+                <h4 style="color:#FF0000">Please Select Distinct Council Preferences to avoid Redirection and loss of form data</h4><br>
+            </div>
 			<div align="left">
 				<h4><b>Council Preference 1</b></h4>
 				<select id="pref1select" name="del_cp1" class="preferenceSelect">
