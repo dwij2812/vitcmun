@@ -80,7 +80,7 @@ require_once('config.php');
 				<h4><b>Institution</b></h4><input class="input" type="text" name="del_inst" placeholder="Institution" required>
 			</div>&nbsp;
             <div align="left">
-				<h4><b>MUN EXPERIENCE</b></h4>&nbsp;
+				<h4><b>MUN Experience</b></h4>&nbsp;
 				<textarea class="textarea has-fixed-size" name="del_exp" rows="10" maxlength="175" required></textarea>
 			</div>&nbsp;
 			<div align="left">
