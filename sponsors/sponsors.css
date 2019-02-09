@@ -1,0 +1,44 @@
+.sponsor-row {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 5vw 5vh 5vw;
+}
+.sponsor-row div {
+    width: 50%;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .sponsor-row {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .sponsor-row div {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .sponsor-row {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .sponsor-row div {
+      width: 100%;
+      text-align: center;
+  }
+}
