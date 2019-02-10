@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 10vh 5vw 10vh 5vw;
+    text-align: center;
 }
 
 .sponsor-row:nth-child(odd) {
@@ -18,7 +19,7 @@
 
 .sponsor-row div {
     width: 50%;
-    text-align: center;
+
 }
 
 .sponsor-row img {
@@ -40,7 +41,7 @@
   }
   .sponsor-row div {
       width: 100%;
-      text-align: center;
+
   }
 }
 
@@ -52,6 +53,6 @@
   }
   .sponsor-row div {
       width: 100%;
-      text-align: center;
+
   }
 }
