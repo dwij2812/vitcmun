@@ -49,8 +49,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -65,32 +66,6 @@
 <!--NOTE:: Added smooth scrolling-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
-<script>
     function test() {
         var myIFrame = document.getElementById("ora");
         var links = myIFrame.contentWindow.document.getElementsByTagName("a");
@@ -102,41 +77,6 @@
 <style>
     body {
         text-decoration: none !important;
-    }
-
-    #apply {
-        position: fixed;
-        cursor: pointer;
-        top: 50vh;
-        left: 50%;
-        color: white;
-        transform: translate3d(-50%, -50%, 0);
-        padding: 0.7em calc(0.7em * 1.2);
-        display: inline-block;
-        border: 3px solid transparent;
-        position: relative;
-        font-size: 1.5em;
-        letter-spacing: 0.07em;
-    }
-
-    #apply .text {
-        font-family: ;
-        transform: translate3d(0, 0.7em, 0);
-        display: block;
-        transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-    }
-
-    #apply:after {
-        position: absolute;
-        content: '';
-        bottom: -3px;
-        left: calc(0.7em * 1.2);
-        right: calc(0.7em * 1.2);
-        height: 3px;
-        background: #f26522;
-        z-index: -1;
-        transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-        transform-origin: left;
     }
 
     .line {
@@ -243,7 +183,7 @@
         font-family: "PT Sans", Sans-Serif;
         font-style: normal;
         font-variant: normal;
-        color: white;
+  /*      color: white;*/
         font-weight: 100 !important;
         line-height: 20px;
         font-stretch: 200em !important;
@@ -252,24 +192,6 @@
 
     .w3-row-padding img {
         margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-        margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
     }
 
     @-webkit-keyframes fadeIn {
@@ -433,84 +355,23 @@
     <div class="scrollbar" id="style-1">
         <div class="force-overflow"></div>
     </div>
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <!-- Avatar image in top left corner -->
-        <img src="images/logovit.png" style="width:100%">
-        <ul>
-            <li data-menuanchor="#main">
-                <a href="/#main" class="w3-bar-item w3-button w3-padding-large w3-black" style="text-decoration:none">
-                    <i class="fa fa-home w3-xlarge"></i>
-                    <p>HOME</p>
-                </a>
-            </li>
-            <li data-menuanchor="#councils">
-                <a href="/#councils" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-                    <i class="fa fa-user w3-xlarge"></i>
-                    <p>COUNCILS</p>
-                </a>
-            </li>
-            <li data-menuanchor="#exec">
-                <a href="/#exec" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-                    <i class="fa fa-eye w3-xlarge"></i>
-                    <p>DELEGATE</p>
-                </a>
-            </li>
-            <li data-menuanchor="#secretariat">
-                <a href="/#secretariat" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-                    <i class="fab fa-black-tie w3-xlarge"></i>
-                    <p>SECRETARIAT</p>
-                </a>
-            </li>
-            <li data-menuanchor="#sponsors">
-                <a href="/sponsors" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-                    <i class="fa fa-handshake w3-xlarge"></i>
-                    <p>SPONSORS</p>
-                </a>
-            </li>
-            <li data-menuanchor="#cont">
-                <a href="/#cont" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-                    <i class="fa fa-phone w3-xlarge"></i>
-                    <p>CONTACT</p>
-                </a>
-            </li>
-            <!--li>
-  <a href="http://www.vitcmun.in/sponsors/" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-    <i class="fa fa-users w3-xxlarge"></i>
-    <p>SPONSORS</p>
-  </a>
-</li-->
-            <!--li>
-  <a href="https://www.townscript.com/e/vitcmun-2018-221022/booking" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration:none">
-    <i class="fa fa-inr w3-xlarge"></i>
-    <p>PAYMENTS</p>
-  </a>
-</li-->
-        </ul>
-    </nav>
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <ul>
-                <li>
-                    <a href="#main" class="w3-bar-item w3-button" style="width:15% !important;text-decoration:none">Home</a></li>
-                <li>
-                    <a href="#councils" class="w3-bar-item w3-button" style="width:20% !important;text-decoration:none">Councils</a></li>
-                <li>
-                    <a href="#exec" class="w3-bar-item w3-button" style="width:20% !important;text-decoration:none">Delegate</a></li>
-                <li>
-                    <a href="#secretariat" class="w3-bar-item w3-button" style="width:24% !important;text-decoration:none">Secretariat</a></li>
-                <li>
-                    <a href="#cont" class="w3-bar-item w3-button" style="width:19% !important;text-decoration:none">Contact</a></li>
-                <li>
-    <a href="/sponsors/" class="w3-bar-item w3-button" style="width:23% !important;text-decoration:none">Sponsors</a></li>
-            </ul>
-        </div>
-    </div>
 
     <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
+    <div  id="main">
+
+          <div class="w3-black w3-container w3-center" style="height:100vh">
+    <div>
+      <img src="images2/logovit.png" class="w3-image" style="height:300px; width:300px" alt="VITCMUN18">
+    </div>
+    <div>
+      <p><a href="http://www.vitcmun.in" class="w3-button w3-black w3-xlarge w3-block w3-hover-blue-grey w3-padding-16">Home</a></p>
+      <p><a href="http://www.vitcmun.in/allotments/Allotment.php" class="w3-button w3-black w3-xlarge w3-block w3-hover-dark-grey w3-padding-16">Allotments</a></p>
+      <p><a href="https://www.townscript.com/e/vitcmun-2018-221022/booking" class="w3-button w3-black w3-xlarge w3-block w3-hover-brown w3-padding-16">Payment</a></p>
+    </div>
+    <br><br><br><br>
+    <a href="#sponsors" class="fa fa-arrow-down" style="text-decoration: none"></a>
+  </div>
 
         <div id="sponsors" style="margin-top:40px">
 
@@ -522,10 +383,10 @@
 
         <div class="sponsor-row">
             <div class="logo">
-                <img class="w3-animate-opacity w3-image" src="images2/balmerol2.jpg" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                <img class="w3-animate-opacity w3-image" src="images2/balmerol2.jpg"  align="center">
             </div>
             <div class="desc">
-                <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://balmerol.com" style="text-decoration:none;color:#FFF">Balmerol</a></p>
+                <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://balmerol.com" style="text-decoration:none;">Balmerol</a></p>
                 <p class="w3-animate-zoom" style="font-size:28px">Title sponsor</p>
                 <p class="w3-animate-zoom">Balmerol is the most trusted and experienced brand in the domain of industrial and automotive lubricants. Manufactured by Balmer Lawrie and Co. Ltd. at its modern manufacturing plants, strategically spread across India (Kolkata, Chennai and Silvassa) using PLC controlled processing, pressure saponification systems for greases and micro-filtration systems for oils, Balmerol is The Best in Long Run. Balmerol is synonymous with superior technology, high quality and efficient performance.</p>
             </div>
@@ -533,10 +394,12 @@
 
         <div class="sponsor-row">
             <div class="logo">
-                <img class="w3-animate-opacity w3-image" src="images2/time.png" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                <img class="w3-animate-opacity w3-image" src="images2/time.png" style="border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;" align="center">
             </div>
             <div class="desc">
-                <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://balmerol.com" style="text-decoration:none;color:#FFF">T.I.M.E.</a></p>
+                <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="https://www.time4education.com/" style="text-decoration:none;">T.I.M.E.</a></p>
                 <p class="w3-animate-zoom" style="font-size:28px">Education partner</p>
                 <p class="w3-animate-zoom">Triumphant Institute of Management Education Pvt. Ltd. (T.I.M.E.) is India's leading test-prep institute with a pan-India presence and is headquartered in Hyderabad. Established in 1992, T.I.M.E. today operates out of 248 offices located in 117 towns and cities across the country. Over 40 IIT/IIM graduates form part of the core team at T.I.M.E.</p>
             </div>
@@ -544,10 +407,10 @@
 
             <div class="sponsor-row">
                 <div class="logo">
-                    <img class="w3-animate-opacity w3-image" src="images2/mcD.png" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                    <img class="w3-animate-opacity w3-image" src="images2/mcd.png" style="background-color: #e10000;" align="center">
                 </div>
                 <div class="desc">
-                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="https://www.mcdonaldsindia.com/" style="text-decoration:none;color:#FFF">McDonald's</a></p>
+                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="https://www.mcdonaldsindia.com/" style="text-decoration:none;">McDonald's</a></p>
                     <p class="w3-animate-zoom" style="font-size:28px">Refreshment Partner</p>
                     <p class="w3-animate-zoom">Back in 1954, a man named Ray Kroc discovered a small burger restaurant in California, and wrote the first page of our history. From humble beginnings as a small restaurant, they have become one of the world's leading food service brands with more than 36,000 restaurants in more than 100 countries.</p>
                 </div>
@@ -555,10 +418,10 @@
 
             <div class="sponsor-row">
                 <div class="logo">
-                    <img class="w3-animate-opacity w3-image" src="images2/zac.jpg" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                    <img class="w3-animate-opacity w3-image" src="images2/zac.jpg"  align="center">
                 </div>
                 <div class="desc">
-                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.zacsvalley.com/" style="text-decoration:none;color:#FFF">Zac's Valley Resorts</a></p>
+                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.zacsvalley.com/" style="text-decoration:none;">Zac's Valley Resorts</a></p>
                     <p class="w3-animate-zoom" style="font-size:28px">Outdoor Location Partner</p>
                     <p class="w3-animate-zoom">Welcome to the unexplored nature at Zac's Valley Resorts. An Eco friendly hill resort situated next to a national forest in Kodaikanal, South of India. Zac's Valley Resorts is not just a usual resort to stay or hangout, it is a place to feel and be in Nature. It’s a home for Nature lovers.</p>
                 </div>
@@ -566,10 +429,10 @@
 
             <div class="sponsor-row">
                 <div class="logo">
-                    <img class="w3-animate-opacity w3-image" src="images2/hindu.jpg" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                    <img class="w3-animate-opacity w3-image" src="images2/hindu.jpg"  align="center">
                 </div>
                 <div class="desc">
-                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.thehindu.com/" style="text-decoration:none;color:#FFF">The Hindu</a></p>
+                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.thehindu.com/" style="text-decoration:none;">The Hindu</a></p>
                     <p class="w3-animate-zoom" style="font-size:28px">Media Partner</p>
                     <p class="w3-animate-zoom">The Hindu, started in 1878 as a weekly, became a daily in 1889 and from then on has been steadily growing to the circulation of 15,58,379 copies and a readership of about 22.58 lakhs. The Hindu's independent editorial stand and its reliable and balanced presentation of the news have over the years, won for it the serious attention and regard of the people who matter in India and abroad.</p>
                 </div>
@@ -577,10 +440,10 @@
 
             <div class="sponsor-row">
                 <div class="logo">
-                    <img class="w3-animate-opacity w3-image" src="images2/lonepack.png" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                    <img class="w3-animate-opacity w3-image" src="images2/lonepack.png"  align="center">
                 </div>
                 <div class="desc">
-                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.lonepack.org/" style="text-decoration:none;color:#FFF">LonePack</a></p>
+                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="http://www.lonepack.org/" style="text-decoration:none;">LonePack</a></p>
                     <p class="w3-animate-zoom" style="font-size:28px">Goodwill Partner</p>
                     <p class="w3-animate-zoom">A non-profit aimed at combating the sufferings emanating from mental health concerns, that have lasted for ages. LonePack has worked for the cause using a community driven approach, surrounding their motto, “Shatter the Stigma”. They did this by working on passionate campaigns. This year, it is returning to positively affect a larger scale of lives, and hopefully carry on the good fight.</p>
                 </div>
@@ -588,10 +451,10 @@
 
             <div class="sponsor-row">
                 <div class="logo">
-                    <img class="w3-animate-opacity w3-image" src="images2/cry.jpg" style="height:80% ;width:80%; border-radius: 300px 300px 300px 300px" align="center">
+                    <img class="w3-animate-opacity w3-image" src="images2/cry.jpg"  align="center">
                 </div>
                 <div class="desc">
-                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="https://www.cry.org/" style="text-decoration:none;color:#FFF">Child Rights and You</a></p>
+                    <p class="w3-animate-zoom" style=" line-height:150%; font-size:36px"><a href="https://www.cry.org/" style="text-decoration:none;">Child Rights and You</a></p>
                     <p class="w3-animate-zoom" style="font-size:28px">Welfare Partner</p>
                     <p class="w3-animate-zoom">Child Rights and You is an Indian non-profit that believes in every child’s right to a childhood – to live, learn, grow and play. For nearly 4 decades, CRY and its 200 partner NGOs have worked with parents and communities across 23 states to ensure sustainable change in the lives of over 2 million underprivileged children.</p>
                 </div>

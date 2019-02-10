@@ -5,15 +5,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 5vh 5vw 5vh 5vw;
+    padding: 10vh 5vw 10vh 5vw;
 }
+
+.sponsor-row:nth-child(odd) {
+    background-color: white;
+    color: black !important;
+}
+.sponsor-row:nth-child(odd) a { color: black; }
+.sponsor-row:nth-child(even) a { color: white; }
+
+
 .sponsor-row div {
     width: 50%;
     text-align: center;
 }
 
-p {
-    color: white;
+.sponsor-row img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    height:35rem;
+
 }
 
 
